@@ -5,7 +5,7 @@ async function setup() {
     id SERIAL PRIMARY KEY,
     code TEXT UNIQUE,
     original_url TEXT,
-    creted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   )`;
 
   await sql.end();
